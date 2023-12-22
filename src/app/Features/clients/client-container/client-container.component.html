@@ -1,0 +1,6 @@
+
+
+<div div class="container d-flex flex-row">
+<client-list class="flex-50 pr-10" [clients]="clients$ | async" (selectedClient)="selectClient($event)"></client-list>
+<client-detail class="flex-50 pr-10"  *ngIf="cliented"  [client]="cliented"></client-detail>
+</div>

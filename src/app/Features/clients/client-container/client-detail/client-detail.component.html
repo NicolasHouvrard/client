@@ -1,0 +1,9 @@
+<div class="d-flex flex-column" >
+  <div *ngIf="client">
+  <h3 class="mb-20">{{ client.name }}</h3>
+  <p class="mb-20">{{ client['id']}}</p>
+  <div>
+    <button (click)="addClient()" class="btn btn-primary">Editer le client</button>
+  </div>
+</div>
+</div>
